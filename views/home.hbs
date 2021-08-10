@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    {{#each drugs}}
+      <div class="col-4 mt-4" >
+        <div class="card" style="width: 18rem;">
+          <img src="{{image}}" class="image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <div class="price">Цена: {{price}}р</div>
+            <hr>
+            <div class="learn_more"><a href="/user/drug/{{_id}}">Подробнее»</a></div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="/user/drugs?page=1&limit=6" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="/user/drugs?page=2&limit=6">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+

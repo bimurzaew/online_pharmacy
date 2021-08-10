@@ -1,0 +1,22 @@
+  {{#if cart}}
+    {{#each cart}}
+      <div class="card foot">
+        <h5 class="card-header">Корзина:</h5>
+        <div class="card-body">
+          <h5 class="card-title">Лекарства:</h5>
+        <p class="card-text">
+          {{#drugs}}
+          <li>
+            {{name}}
+            <a href="/user/cart/{{../_id}}/delete/{{_id}}"><button type="button" class="btn btn-outline-dark">x</button></a>
+          </li>
+          <hr>
+        {{/drugs}}
+          </p>
+          <div class="total">итого: {{total}} p</div>
+          <a href="/user/611259e10f1a230e4cf7cb6f/cart/{{_id}}" class="btn btn-primary">Приобрести лекарства</a>
+          <a href="/user/cart/{{_id}}/clean" class="btn btn-primary">Очистить корзину</a>
+        </div>
+      </div>
+    {{/each}}
+  {{/if}}

@@ -1,0 +1,71 @@
+body {
+    height: 100%;
+    background-color: #edf2f4;
+}
+.bi-shield-plus {
+    margin:0 20px 0 20px;
+    color:green;
+}
+.card-body {
+    border:12px solid #fff;
+    background-color: #c0d6df;
+}
+.navbar {
+    background: #264653!important
+}
+.card-title {
+    font-size: 16px;
+}
+.card-text {
+    font-size: 11px;
+}
+.image  {
+    width: 80%;
+    margin: auto;
+}
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: auto;
+}
+.bi-cart-plus {
+    margin-right: 30px;
+    color: green;
+}
+.price {
+    background-color:#c0d6df;
+    margin:0 0 15px 10px;
+}
+.learn_more a {
+    text-decoration: none;
+}
+.total {
+    margin: 0 0 20px 20px;
+    font-weight: bold;
+}
+.rounded {
+    width: 300px;
+}
+.desc {
+    height: 80px;
+}
+.footer-copyright {
+    color: white;
+    background-color: #264653;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+.foot {
+    margin-bottom: 150px;
+}
+.btn-outline-danger {
+    margin-top: 20px;
+}
+.page-item {
+    margin-top: 25px;
+}
