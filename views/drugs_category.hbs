@@ -1,19 +1,19 @@
 <div class="container">
   <div class="row">
     {{#each drug}}
-      <div class="col-4 mt-4" >
+      <div class="col-4 mt-4">
         <div class="card" style="width: 18rem;">
-          <img src="{{image}}" class="image" alt="...">
+          <img src="{{image}}" class="image" alt="..." />
           <div class="card-body">
             <h1 class="card-title">{{name}}</h1>
             <div class="price">Цена: {{price}}р</div>
-            <hr>
-            <div class="learn_more"><a href="/user/drug/{{_id}}">Подробнее»</a></div>
+            <hr />
+            <div class="learn_more"><a
+                href="/user/drug/{{_id}}"
+              >Подробнее»</a></div>
           </div>
         </div>
       </div>
     {{/each}}
   </div>
 </div>
-
-

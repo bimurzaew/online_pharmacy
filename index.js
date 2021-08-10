@@ -14,7 +14,7 @@ app.use(express.static(path.resolve(__dirname, "public")));
 app.use(fileUpload());
 app.use(require("./routes/index"));
 
-app.engine(".hbs", hbs({ extname: ".hbs"}));
+app.engine(".hbs", hbs({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
 mongoose

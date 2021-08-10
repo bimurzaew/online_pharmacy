@@ -11,7 +11,7 @@ const cartSchema = mongoose.Schema({
       ref: "Drug",
     },
   ],
-  total:Number,
+  total: Number,
 });
 
 const Cart = mongoose.model("Cart", cartSchema);

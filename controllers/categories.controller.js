@@ -33,7 +33,7 @@ module.exports.categoriesController = {
     try {
       const categories = await Category.find().lean();
       res.render("categories", {
-        categories
+        categories,
       });
     } catch (err) {
       console.log(err);

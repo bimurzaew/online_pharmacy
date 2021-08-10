@@ -1,6 +1,6 @@
 const path = require("path");
 const User = require("../models/User.model");
-const Category = require('../models/Category.model')
+const Category = require("../models/Category.model");
 
 module.exports.usersController = {
   addUser: async (req, res) => {
@@ -28,16 +28,16 @@ module.exports.usersController = {
       console.log(err);
     }
   },
-  getUser:async (req,res) => {
+  getUser: async (req, res) => {
     try {
-      const categories = await Category.find().lean()
+      const categories = await Category.find().lean();
       const user = await User.find().lean().populate("drugs", "name");
       res.render("user", {
         user,
-        categories
-      })
-    }catch (err) {
-      console.log(err)
+        categories,
+      });
+    } catch (err) {
+      console.log(err);
     }
   },
   topUpBalance: async (req, res) => {

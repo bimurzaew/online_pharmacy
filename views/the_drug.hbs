@@ -1,9 +1,12 @@
 <div class="card mb-3">
-  <img src="{{drug.image}}" class="  rounded mx-auto d-block" alt="...">
+  <img src="{{drug.image}}" class="rounded mx-auto d-block" alt="..." />
   <div class="card-body">
     <h5 class="card-title">{{drug.name}}</h5>
     <p class="card-text">{{drug.description}}</p>
     <div class="price">Цена: {{drug.price}}р</div>
-    <hr>
-    <a href="/user/cart/6110db86fe0b311c74c9a094/add/{{drug._id}}" class="btn btn-primary">Добавить в корзину</a></div>
+    <hr />
+    <a
+      href="/user/cart/6110db86fe0b311c74c9a094/add/{{drug._id}}"
+      class="btn btn-primary"
+    >Добавить в корзину</a></div>
 </div>

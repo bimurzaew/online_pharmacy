@@ -8,8 +8,8 @@ const medicineSchema = mongoose.Schema({
     ref: "Category",
   },
   recipe: Boolean,
-  image:String,
-  description:String
+  image: String,
+  description: String,
 });
 
 const Medicine = mongoose.model("Drug", medicineSchema);

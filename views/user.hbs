@@ -1,14 +1,17 @@
 {{#if user}}
   {{#each user}}
     <div class="card" style="width: 18rem;">
-      <img src="{{image}}" class="card-img-top" alt="...">
+      <img src="{{image}}" class="card-img-top" alt="..." />
       <div class="card-body">
         <p class="card-text">Имя: {{name}}</p>
         <div class="card-text">Кошелек: {{wallet}}р</div>
-        <a href="/user/{{_id}}/balance"><button type="button" class="btn btn-outline-danger">Пополнить счет</button></a>
+        <a href="/user/{{_id}}/balance"><button
+            type="button"
+            class="btn btn-outline-danger"
+          >Пополнить счет</button></a>
         <div>{{#each drugs}}
-          {{name}}
-        {{/each}}</div>
+            {{name}}
+          {{/each}}</div>
       </div>
     </div>
   {{/each}}
