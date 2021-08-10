@@ -69,3 +69,7 @@ body {
 .page-item {
     margin-top: 25px;
 }
+.nav-link, .navbar-brand {
+    color: white!important;
+}
+
